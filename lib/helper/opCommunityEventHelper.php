@@ -15,6 +15,7 @@ function op_api_community_event($event)
     'capacity'             => $event->getCapacity(),
     'participants'         => count($event->getCommunityEventMember()),
     'created_at'           => $event->getCreatedAt(),
+    'updated_at'           => $event->getUpdatedAt(),
   );
 }
 
@@ -27,6 +28,7 @@ function op_api_community_event_mini($event)
     'name'           => $event->getName(),
     'body'           => nl2br($event->getBody()),
     'created_at'     => $event->getCreatedAt(),
+    'updated_at'     => $event->getUpdatedAt(),
   );
 }
 

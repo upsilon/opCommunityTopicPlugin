@@ -50,7 +50,7 @@ function getList(params)
             return this.data.latest_comment.substr(0, 50);
           },
           calcTimeAgo: function(){
-            return moment(this.data.created_at, 'YYYY-MM-DD HH:mm:ss').fromNow();
+            return moment(this.data.updated_at, 'YYYY-MM-DD HH:mm:ss').fromNow();
           }
         });
         $('#list').children().remove();

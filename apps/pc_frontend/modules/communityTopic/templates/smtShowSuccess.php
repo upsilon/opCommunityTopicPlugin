@@ -83,8 +83,8 @@ op_smt_use_javascript('/opCommunityTopicPlugin/js/lang/ja.js', 'last');
 <script type="text/javascript">
 var topic_id = <?php echo $id ?>;
 
-function _timeAgo(created_at){
-  return moment(created_at, 'YYYY-MM-DD HH:mm:ss').fromNow();
+function _timeAgo(date_str){
+  return moment(date_str, 'YYYY-MM-DD HH:mm:ss').fromNow();
 }
 
 function getEntry(params)

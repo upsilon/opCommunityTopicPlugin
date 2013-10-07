@@ -49,6 +49,7 @@ function op_api_community_topic($topic)
     'member'         => op_api_member($topic->getMember()),
     'body'           => nl2br($topic->getBody()),
     'created_at'     => $topic->getCreatedAt(),
+    'updated_at'     => $topic->getUpdatedAt(),
   );
 }
 
@@ -61,6 +62,7 @@ function op_api_community_topic_mini($topic)
     'name'           => $topic->getName(),
     'body'           => nl2br($topic->getBody()),
     'created_at'     => $topic->getCreatedAt(),
+    'updated_at'     => $topic->getUpdatedAt(),
   );
 }
 
