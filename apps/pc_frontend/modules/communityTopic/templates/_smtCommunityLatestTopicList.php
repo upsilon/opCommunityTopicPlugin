@@ -29,7 +29,7 @@ $(function(){
         var entry = $('#topicEntry').tmpl(res.data,
         {
           calcTimeAgo: function(){
-            return moment(this.data.updated_at, 'YYYY-MM-DD HH:mm:ss').fromNow();
+            return moment(this.data.updated_at, 'YYYY-MM-DD HH:mm:ss').format('M[月]D[日]');
           }
         });
         $('#topicList').append(entry);

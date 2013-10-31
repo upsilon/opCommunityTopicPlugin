@@ -111,7 +111,7 @@ op_smt_use_javascript('/opCommunityTopicPlugin/js/lang/ja.js', 'last');
 var event_id = <?php echo $id ?>;
 
 function _timeAgo(date_str){
-  return moment(date_str, 'YYYY-MM-DD HH:mm:ss').fromNow();
+  return moment(date_str, 'YYYY-MM-DD HH:mm:ss').format('M[月]D[日]');
 }
 
 function getEntry(params)

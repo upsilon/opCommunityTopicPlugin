@@ -55,7 +55,7 @@ function getList(params)
             return this.data.latest_comment.substr(0, 50);
           },
           calcTimeAgo: function(){
-            return moment(this.data.updated_at, 'YYYY-MM-DD HH:mm:ss').fromNow();
+            return moment(this.data.updated_at, 'YYYY-MM-DD HH:mm:ss').format('M[月]D[日]');
           }
         });
         $('#list').children().remove();
